@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<title>Digital Album</title>
+	<link
+        rel="stylesheet"
+        type="text/css"
+        media="screen"
+        href="script.css"
+        />
+    <script src = "main.js"></script>
+</head>
+<body>
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'London')">London</button>
+		<button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+		<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+	</div>
+
+	<!-- Tab content -->
+	<div id="London" class="tabcontent">
+		<div class="sidebar">
+			
+			<div class="column">
+				<img src="https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1657773706020.jpg"  class="preview-style" onclick = "openViewPic(event, 'London')">
+			</div>
+			
+		</div>
+
+		<div class="sidebody">
+			<!-- <h3>Paris</h3>
+	    	<p>Paris is the capital of France.</p> -->
+			<img src="https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1657773706020.jpg" class="view-style">
+		</div>
+	</div>
+	
+
+	<div id="Paris" class="tabcontent">
+		<div class="sidebar">
+			<div class="column">
+				<img src="./images/2.jpeg"  class="preview-style" onclick = "openViewPic(event, 'Paris')">
+			</div>
+			
+		</div>
+
+		<div class="sidebody">
+			<img src="" class="view-style">
+		</div>
+	</div>
+
+	<div id="Tokyo" class="tabcontent">
+		<div class="sidebar">
+			<div class="column">
+				<img src="./images/2.jpeg"  class="preview-style" onclick = "openViewPic(event, 'Tokyo')">
+			</div>
+			
+		</div>
+
+		<div class="sidebody">
+			<img src="" class="view-style">
+		</div>    
+	</div>
+</body>
+</html>

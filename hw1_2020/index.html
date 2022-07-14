@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Viewer</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="styles.css"
+        />
+        <script src="main.js"></script>
+    </head>
+    <body class = image-viewer__container>
+        <!-- Try to implement an HTML that looks like the reference example:
+        ./images/screenshot.png  -->
+        <!-- Please use the class names and IDs as defined in styles.css
+         so that the outlook can be the same as the reference. -->
+        <header class = image-viewer__title> Image-Viewer </header>
+        <main class = image-viewer__main>
+            <img id = "back" src="./images/back.png" class = "disabled" onclick = "showBackPic()">
+            <div>
+                <!-- <img id = "loadingGif" src = ""> -->
+                <img id = "display" src = "https://i.pinimg.com/736x/81/04/93/810493ab323a48ff2bb687251af7a980.jpg">
+                <span class = "image-viewer__display-source-wrapper">
+                    <a id = "ref" href = "https://i.pinimg.com/736x/81/04/93/810493ab323a48ff2bb687251af7a980.jpg">
+                        https://i.pinimg.com/736x/81/04/93/810493ab323a48ff2bb687251af7a980.jpg
+                    </a>
+                </span>
+            </div>
+            <img id = "next" src="./images/next.png" class = "image-viewer__button" onclick = "showNextPic()">
+        </main>   
+    </body>
+</html>
+
+
+ 
