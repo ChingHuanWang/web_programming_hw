@@ -1,7 +1,5 @@
-
-var pics = [["https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1657773706020.jpg"], 
-            ["https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1657696457103.jpg"], 
-            ["https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1657739036623.jpg"]]
+var picSrc = [[], [], []];
+var picNum = [0, 0, 0];
 
 
 
@@ -30,4 +28,21 @@ function openViewPic(evt, cityName){
     view.style.display = "block";
 }
 
-function appendImage()
+function appendPic(cityName){
+    var src = prompt("please enter the picture url");
+    if(src != null && src != ""){
+        var newPic = document.createElement("img");
+        var picRegion = document.getElementById(cityName + " sidebar-content");
+        newPic.src = src;
+        newPic.className = "preview-style";
+        newPic.onclick = openViewPic(evt, cityName);
+        picRegion.appendChild(newPic);
+    }
+    else{
+        alert("not valid URL");
+    }
+}
+
+function deletePic(cityName){
+
+}

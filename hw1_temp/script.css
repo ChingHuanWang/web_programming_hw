@@ -47,21 +47,21 @@
 
 .sidebar{
     width: 30%;
+    /*display: block;*/
     float: left;
     /*background-color: blue;*/
 }
 
 .sidebar-content{
-    display: block;
-    border: 1px solid #ccc;
-    border-top: none;
-    overflow-y: auto;
     height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    /*border-top: none;*/
 }
 
-.append-delete-region{
-    border: solid #ccc;
+.append-delete-picture{
     height: 50px;
+    border: 1px solid #ccc;
 }
 
 .column{
