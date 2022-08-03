@@ -5,9 +5,19 @@
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
+.tablinks {
     background-color: inherit;
     float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.album{
+    background-color: inherit;
+    float: right;
     border: none;
     outline: none;
     cursor: pointer;
@@ -27,7 +37,7 @@
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
+    display: block;
 }
 
 .view-style{
@@ -45,23 +55,24 @@
     transform: scale(1.2);
 }
 
+
 .sidebar{
     width: 30%;
+    /*display: block;*/
     float: left;
     /*background-color: blue;*/
 }
 
 .sidebar-content{
-    display: block;
-    border: 1px solid #ccc;
-    border-top: none;
-    overflow-y: auto;
     height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    /*border-top: none;*/
 }
 
-.append-delete-region{
-    border: solid #ccc;
+.append-delete-picture{
     height: 50px;
+    border: 1px solid #ccc;
 }
 
 .column{

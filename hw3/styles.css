@@ -196,6 +196,16 @@ input[type='checkbox'] {
     text-decoration: underline;
 }
 
+.todo-app__clear{
+    background: #ddd;
+    padding: 5px;
+}
+
+.todo-app__clear:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 .todo-item-input {
     font-size: 1.5em;
     font-weight: 300;

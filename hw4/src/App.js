@@ -42,18 +42,18 @@ export default function App(){
         let checkBox = evt.currentTarget;
         let id = todoList.findIndex(e => e.itemName === itemDetail.innerHTML);
         if(!todoList[id].done){
+            itemDetail.className = "todo-app__completed-item-detail";
+            checkBox.style.background = "#7FFF00";
             let newItem = {itemName:todoList[id].itemName, done:true};
             setTodoList([...todoList.slice(0, id), newItem, ...todoList.slice(id+1, todoList.length)]);
             setTodoNum(todoNum-1);
-            itemDetail.className = "todo-app__completed-item-detail";
-            checkBox.style.background = "#7FFF00";
         }
         else{
+            itemDetail.className = "todo-app__active-item-detail";
+            checkBox.style.background = "#ddd";
             let newItem = {itemName:todoList[id].itemName, done:false};
             setTodoList([...todoList.slice(0, id), newItem, ...todoList.slice(id+1, todoList.length)]);
             setTodoNum(todoNum+1);
-            itemDetail.className = "todo-app__active-item-detail";
-            checkBox.style.background = "#ddd";
         }
     }
 

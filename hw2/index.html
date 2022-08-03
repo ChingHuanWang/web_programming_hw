@@ -10,62 +10,32 @@
         media="screen"
         href="script.css"
         />
-    <script src = "main.js"></script>
 </head>
 <body>
 	<div class="tab">
-		<button class="tablinks" onclick="openCity(event, 'London')">London</button>
-		<button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-		<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+		<button class="tablinks">London</button>
+		<button class="tablinks">Paris</button>
+		<button class="tablinks">Tokyo</button>
+
+		<button class="album" onclick="removeAlbum()">remove album</button>
+		<button class="album" onclick="appendAlbum()">append album</button>
 	</div>
 
 	<!-- Tab content -->
-	<div id="London" class="tabcontent">
+	<div class="tabcontent">
 		<div class="sidebar">
-			<div class="sidebar-content">
-				<div class="column">
-					<img src="https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1657773706020.jpg" class="preview-style">
-				</div>
-			</div>
-			<div class = "append-delete-region">
-				<input type="submit" name="button" value="新增圖片">
-				<input type="reset" name="">
-			</div>	
+			<div class="sidebar-content"></div>
 			
-		</div>
-
-		<div class="sidebody">
-			<!-- <h3>Paris</h3>
-	    	<p>Paris is the capital of France.</p> -->
-			<img src="https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1657773706020.jpg" class="view-style">
-		</div>
-	</div>
-	
-
-	<div id="Paris" class="tabcontent">
-		<div class="sidebar">
-			<div class="column">
-				<img src="./images/2.jpeg"  class="preview-style" onclick = "openViewPic(event, 'Paris')">
-			</div>
-			
+			<div class="append-delete-picture">
+				<button onclick="loadNetPic()">append picture</button>
+				<button onclick="removeSelectedPreview()">remove picture</button>
+			</div>		
 		</div>
 
 		<div class="sidebody">
 			<img src="" class="view-style">
 		</div>
 	</div>
-
-	<div id="Tokyo" class="tabcontent">
-		<div class="sidebar">
-			<div class="column">
-				<img src="./images/2.jpeg"  class="preview-style" onclick = "openViewPic(event, 'Tokyo')">
-			</div>
-			
-		</div>
-
-		<div class="sidebody">
-			<img src="" class="view-style">
-		</div>    
-	</div>
+	<script src = "main.js"></script>
 </body>
 </html>
